@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Animación en los títulos */
+.section-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #007bff;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.section-title:hover:after {
+    transform: translateX(0);
+}
+
+/* Efecto hover en las tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+a{
+    text-decoration: none;
+}
